@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
@@ -65,6 +65,8 @@
       color: #000;
       line-height: 1.6;
       overflow-x: hidden;
+    user-select: none;
+  -webkit-user-select: none;
     }
 
     header {
@@ -209,8 +211,8 @@
   right: 20px;
   width: 42px;
   height: 42px;
-  background: black;
-  border: 1px solid rgba(255,255,255,0.3);
+  background: #fff;
+  border: 1px solid #000;
   border-radius: 8px;
   cursor: pointer;
   z-index: 1000;
@@ -218,10 +220,9 @@
 }
 
 .menu-btn span {
-  display: block;
-  width: 22px;
+  display: block;  width: 22px;
   height: 2px;
-  background: #fff;
+  background: #000;
   margin: 6px auto;
   transition: 0.3s;
 }
@@ -240,7 +241,7 @@ nav {
 }
 
 nav a {
-  display: block;
+  display: white;
   color: #fff;
   text-decoration: none;
   margin: 15px 0;
@@ -250,7 +251,6 @@ nav a {
 /* 表示状態 */
 nav.open {
   right: 0;
-  background: #000;
 }
 
 /* PCでは常に表示 */
@@ -337,8 +337,7 @@ nav {
     transform: translateY(-11px) rotate(-45deg);
   }
 }
-
- /* ===== ナビ文字を巨大化 ===== */
+/* ===== ナビ文字を巨大化 ===== */
 nav.open a {
   font-size: 1.5rem;
 }
@@ -360,6 +359,7 @@ nav.open li {
 nav.open li:nth-child(1) { transition-delay: 0.20s; }
 nav.open li:nth-child(2) { transition-delay: 0.35s; }
 nav.open li:nth-child(3) { transition-delay: 0.50s; }
+      
       nav li {
   transform: translateY(20px);
 }
@@ -386,7 +386,7 @@ nav.open li:nth-child(3) { transition-delay: 0.50s; }
            <ul>
            <li><a href="#about">このページについて</a></li>
            <li><a href="#product">製品</a></li>
-          <li> <a href="service">サービス</a></li>
+          <li> <a href="#service">サービス</a></li>
                </ul>
            <!-- ハンバーガーボタン -->
 <button id="menuBtn" class="menu-btn">
@@ -512,13 +512,13 @@ nav.open li:nth-child(3) { transition-delay: 0.50s; }
       <img src="https://store-images.s-microsoft.com/image/apps.14785.14423064005243201.42399137-369b-40bb-b5be-ac2f079c41bf.b1d6d110-9d93-441f-ac20-2e04fd7dfe3c" alt="サービス1" class="fixed-size-img" />
       <h4>最強のチャットAI:ネガポジ無双</h4>
       <p>ポジティブな言葉を全てネガティブに変換して返すチャットAI。<br>
- 例：「今日はいい天気だね」→「そう思い込まないと生きていけないんだね」</p>
+ 例：「今日はいい天気だね」→「そう思い込まないと生きていけないんだね」<br>使いたい方は<a href="https://novelstar354.github.io/chat">こちら</a>。</p>
     </div>
 
      <div class="service fade-in">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDomKNQBdl3DOd2AW9KgS4bA__m9uJjljc0Q&s" alt"">
         <h4>究極のアプリ：空もよう？</h4>
-         <p>ランダムな天気を表示するお天気アプリです。<br>明日の天気は運次第。いや、今日の天気も運次第。
+         <p>ランダムな天気を表示するお天気アプリです。<br>明日の天気は運次第。いや、今日の天気も運次第。使いたい方は<a href="https://novelstar354.github.io/weather">こちら</a>。
          <p>
     </div>
 
@@ -537,10 +537,15 @@ nav.open li:nth-child(3) { transition-delay: 0.50s; }
           <h4>気まぐれスケジュールアプリ</h4>
           <p>気まぐれにスケジュールが増減します。</p>
           </div>
+      <div class="service fade-in">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLj1wZ8zW4WNCR42s3H08JmL8waGOY3BpwTg8uBmYMeQ&s=10""">
+          <h4>最強のメモアプリ：改ざんメモ v4</h4>
+          <p>メモ帳として活用できますが、書いた文字が変わったり、消えたりします。使いたい方は<a href="https://novelstar354.github.io/memo">こちら</a>。</p>
+        </div>
     <div class="service fade-in">
       <img src="https://www.silhouette-illust.com/wp-content/uploads/2017/09/travel_odekake_38105-600x600.jpg" alt="">
      <h4>最高の旅行代理店：ステイホームツアーズ</h4>
-    <p>あなたに家への旅行を提供いたします。<br>  ※予約するとキャンセルされる可能性があります。
+    <p>あなたに家への旅行を提供いたします。<br>  ※予約するとキャンセルされる可能性があります。<br>予約したい方は<a href="https://novelstar354.github.io/stay">こちら</a>。
     <p>
     </div> 
       
